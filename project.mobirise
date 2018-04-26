@@ -1,0 +1,135 @@
+{
+  "settings": {
+    "name": "Project Experiences",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise-amp",
+      "title": "Mobirise AMP",
+      "styling": {
+        "primaryColor": "#4ea2e3",
+        "secondaryColor": "#4addff",
+        "successColor": "#0dcd7b",
+        "infoColor": "#8282e7",
+        "warningColor": "#767676",
+        "dangerColor": "#a0a0a0",
+        "mainFont": "Roboto",
+        "display1Font": "Roboto",
+        "display1Size": 4.5,
+        "display2Font": "Roboto",
+        "display2Size": 2.2,
+        "display5Font": "Roboto",
+        "display5Size": 1.8,
+        "display7Font": "Roboto",
+        "display7Size": 1.1,
+        "display4Font": "Roboto",
+        "display4Size": 0.9,
+        "isRoundedButtons": true
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "favicon": "",
+    "noImageResize": "",
+    "versionFirst": "4.7.2",
+    "uniqCompNum": 4,
+    "versionPublish": "4.7.2"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-title": {
+              "padding-bottom": "1rem"
+            },
+            ".mbr-section-btn": {
+              "padding-top": "1.5rem"
+            }
+          },
+          "_name": "content19",
+          "_customHTML": "<section class=\"mbr-section content19\" group=\"Article\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background6.jpg\" selected>\n            <input type=\"color\" title=\"Background Color\" value=\"#000000\">\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-container\">\n        <h2 mbr-if=\"showTitle\" class=\"mbr-title align-center mbr-fonts-style mbr-bold mbr-white\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-title\">\n            Project Experiences</h2>\n        <h3 mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style mbr-white\" mbr-theme-style=\"display-5\">\n            <i>Shape your future web project with sharp design and refine coded functions.</i>\n        </h3>\n        <div class=\"mbr-section-btn align-center\" mbr-if=\"showButtons\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnAdd,-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobirise.com\">LEARN MORE</a>\n            <a class=\"btn btn-white-outline\" href=\"https://mobirise.com\">LIVE DEMO</a>\n        </div>\n    </div>\n</section>",
+          "_cid": "qQi4wbsLOp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content19-1"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".counter-container": {
+              "ul": {
+                "margin-bottom": "0",
+                "li": {
+                  "color": "inherit",
+                  "padding-bottom": "1rem",
+                  "& when (@stylizedCounters)": {
+                    "list-style": "none",
+                    "&:before": {
+                      "box-sizing": "inherit",
+                      "position": "absolute",
+                      "left": "0px",
+                      "padding-top": "3px",
+                      "content": "''",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "margin": "10px 15px",
+                      "line-height": "20px",
+                      "transition": "all .2s",
+                      "color": "contrast(@counterColor)",
+                      "background": "@counterColor",
+                      "width": "10px",
+                      "height": "10px",
+                      "border-radius": "50%",
+                      "& when (@countersType = 'circle')": {
+                        "background": "none",
+                        "border": "1px solid @counterColor",
+                        "color": "@counterColor"
+                      },
+                      "& when (@countersType = 'square')": {
+                        "border-radius": "0"
+                      },
+                      "& when (@countersType = 'romb')": {
+                        "border-radius": "0",
+                        "transform": "rotate(45deg)"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            ".mbr-text DIV": {
+              "text-align": "left"
+            }
+          },
+          "_name": "content7",
+          "_customHTML": "<section class=\"content7 mbr-section\" plugins=\"amp-main\">\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <input type=\"color\" title=\"Counter Color\" name=\"counterColor\" value=\"#4ea2e3\" condition=\"stylizedCounters\">\n        <input type=\"checkbox\" title=\"Stylized Counters\" name=\"stylizedCounters\" checked>\n        <select title=\"Counters Type\" name=\"countersType\" condition=\"stylizedCounters\">\n            <option value=\"default\">Сircle Fill</option>\n            <option value=\"circle\">Circle</option>\n            <option value=\"square\">Square</option>\n            <option value=\"romb\" selected>Rhombus</option>\n\n        </select>   \n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"mbr-container\">\n        <div class=\"mbr-text counter-container mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article>\n            <div><span style=\"letter-spacing: 0.5px;\"><b>Commercial/Mixed-Use:</b></span></div><ul><li><b>118 Mount Street, North Sydney AUS FJMT 2016 to 2018: </b>The Zurich commercial tower located at 118 Mount Street North Sydney comprising of three basements car parking levels, amenities at Ground Floor, café at Level 1, and commercial floors from Levels 02 to 29. I was responsible for leading the complete fire protection/fire services design from concept to construction phase, which includes close coordination and workshops with the client/architects and among other Building Services teams in developing a fully compliant design.</li>\n                <li><b>Parramatta Square Development, Sydney AUS JPWalker 2016 to 2018: </b>The Parramatta Square development involves the construction of a public square, 8 above-ground developments, and basement carpark levels. Part of the 4PS &amp;amp; 6PS podium is located on the 8PS allotment and 3PS, 5PS, 7PS and 8PS are future works. I was responsible for the complete base-building fire protection/fire services design and fit-out works from concept to construction phase which includes close coordination and workshops with the client/architects and among other Building Services teams in developing a fully compliant design. I also carried-out shop drawings review.</li><li><b>OSD (Over Station Development), Sydney Sydney Metro/TfNSW 2016 to 2018:&nbsp;</b>The project is located in various Sydney metro stations and there are multiple building developments for each location that comprise mainly commercial and residential buildings. I was responsible for preparation of complete fire protection design and documentation from concept to construction stage focusing on developing the suitable approach on these very challenging structures. I was also involved in the complete fire protection design from concept stage and attended project coordination meetings and workshops.</li></ul><p><b>Data Centres:</b></p><ul><li><b>AirTrunk Data Centres, Sydney &amp;amp; Melbourne AUS FM Evolution 2016 to 2018:</b> The project consists of multiple data centre buildings situated in two different project sites in Sydney and Melbourne. AirTrunk is a start-up wholesale data centre provider with plans to establish in Asia Pacific. I was responsible for the preparation of complete fire protection systems design and documentation from concept to construction stage, including participation in regular coordination and workshop meetings with Building Services and client.</li><li><b>Viasat Data Centre, Kapooka AUS, Department of Defence 2016 to 2018:&nbsp;</b>The primary New South Wales (NSW) commercial data centre presently being used by Defence is Global Switch Ultimo (GSU), which is located in Sydney. GSU has been utilised by Defence under a ten-year lease that began in 2010. GSU serves as the NSW regional Defence Secret Network (DSN) data centre for NSW users, NSW Protected Network Disaster Recovery and the backup DSN data centre for other regions. I was involved in the preparation of complete fire protection systems design and documentation.</li></ul><p><b>Education:</b></p><ul><li><b>New York University, Abu Dhabi Mubadala 2009 to 2012:</b> The campus is located on Saadiyat Island and is a highly selective liberal arts and sciences college fully integrated into a major research university. A mixed used development consisting of educational buildings, laboratories, residential, and amenity uses with conventional parking levels. I led the complete fire protection design from concept to construction phase which includes close coordination with the client/architects and among other MEP disciplines in developing a fully compliant design. I was also assigned on site for over a year to directly monitor the fire protection design status and attend project coordination meetings and workshops regularly. Also, I was instrumental in obtaining the approval and discussions of design/strategy with the local authorities including shop drawings and material submittal review/approval. &nbsp;</li></ul><p><b>Government:</b></p><ul><li><b>One Za’abeel, Dubai One Za’abeel/Nikken Sekkei/MACE architect 2015 to 2016:</b> The project is a twin tower development containing apartments, two hotels (4 star and Deluxe 5-star), commercial offices and retail. The two towers sit above a four level podium and a seven level basement. The towers comprising mainly of Offices and residential units. The existing elevated highway passes between the towers and a plaza will be created underneath. I was responsible for complete fire protection design and documentation from schematic to construction stage initially on supporting the clients in developing the suitable and compliant approach on this very high profile and challenging structure. Involve and participated in weekly design meetings and workshops throughout the design phase to monitor the fire protection design status and close coordination. I also performed shop drawings and material submittal review and approval.</li><li><b>The Presidential Palace, Abu Dhabi EWAN 2008 to 2011:</b> The palace site is located along shoreline in Abu Dhabi and consists of Main Presidential Palaces, Wing Buildings, Staff &amp;amp; Military Accommodation, and Guest’s Villas. The buildings are classified under assembly, business, and residential occupancies. I was responsible for preparation of complete fire protection design and documentation from concept to construction stage focusing on developing the suitable approach on this very prestigious and challenging structure. I was assigned on site on a weekly basis throughout the design phase to monitor the fire protection design status and attend project coordination meetings and workshops. I also involved in the review and approval of shop drawings and material submittals.</li></ul><p><b>Healthcare:</b></p><ul><li><b>Arzanah Medical Complex, Abu Dhabi HDP LTD / HLG 2009 to 2011:</b> The project is located in Abu Dhabi and is a new 75-bed sports injury hospital complete with Diagnostic Imaging &amp;amp; Surgical suites, with an out-patients clinic &amp;amp; wellness facility. I was responsible for the preparation and delivery of complete fire protection designs of this exclusive healthcare building in Abu Dhabi. The works included complete and comprehensive design as well as close coordination and workshops with among MEP disciplines throughout the project phase.</li><li><b>High Rise/Residential/Retail Entisar Tower, Dubai AE-7 Associates 2014 to 2016:</b> The project is a 114 story mixed use development located on Sheikh Zayed Road, Dubai. The height of the building from the lowest level of the fire department vehicle access to the highest occupied floor level is 504m and considered as the second highest tall tower in the region. I led the complete fire protection design from concept to Detailed Design phase which includes close coordination and workshops with the client/architects and among other MEP disciplines in developing a fully compliant design.</li><li><b>Trade Centre District 1 – Dubai Word Trade Centre, Dubai Dubai Properties 2008 to 2015:</b> A massive development in Dubai that comprised of multiple high rise buildings mainly of commercial and residential used including 4 levels of car parking spaces. I was responsible for the preparation and delivery of complete fire protection designs of the C1 to C6 Trade Centre Offices, 3-star Ibis Hotel, 4-star Radisson and 5-star Aman Hotels, over a 4 storey deep basement structure in the centre of Dubai. Apart from regular coordination meetings and workshops with among the MEP disciplines I was also involved in obtaining the approval and discussions of design/strategy with the local authorities including shop drawings &amp;amp; material submittal review/approval.&nbsp;</li><li><b>North Gate Mall, Doha, Qatar Voltas Qatar 2012 to 2013:</b> The project located in Doha, is a massive mall development that includes high rise commercial office towers sitting in a common multi-level car parking areas. Responsible for the preparation of fire protection design and documentation from detailed design to construction phase including participation in regular coordination meetings and workshops with other MEP disciplines. I closely supervised the fire protection team in developing quality drawings to ensure all design criteria and parameters have been considered and all submission dates are met in timely manner. I was also involved in the review and approval of shop drawings and material submittals.&nbsp;</li></ul><p><b>Roads &amp; Bridges:</b></p><ul><li><b>YAS Southern Tunnel, Abu Dhabi Aldar, Halcrow 2008 to 2010:</b> The project is 700m tunnel development consists of two traffic cells and once cell for LRT (Light Railway Transportation) situated in Abu Dhabi. I was responsible for the preparation of fire protection design and documentation from concept design to construction phase including participation in regular coordination meetings with the projects team and other MEP disciplines.</li></ul>\n        </div>\n    </div>\n</section>",
+          "_cid": "qQi53S1lXN",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content7-3"
+        }
+      ]
+    }
+  }
+}
